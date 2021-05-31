@@ -33,4 +33,4 @@ func _ready():
 
 func _on_BackButton_pressed():
 	ScheduleData.save_scrolling($Node2D)
-	get_tree().change_scene_to(load("res://UI/MainScreen.tscn"))
+	get_tree().change_scene_to(main_screen)

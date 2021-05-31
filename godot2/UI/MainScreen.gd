@@ -10,6 +10,8 @@ var lunchtimes = {"Music":[681,711], "World Language":[681,711], "Art":[681,711]
 onready var event = $CurrentClass/Event
 onready var event2 = $CurrentClass/Event2
 onready var event3 = $CurrentClass/Event3
+onready var home_menu = preload("res://UI/HomeMenu.tscn")
+onready var schedule_menu = preload("res://UI/ScheduleMenuVersion2.tscn")
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -82,9 +84,9 @@ func find_period(time):
 
 func _on_BackButton_pressed():
 	ScheduleData.save_scrolling($Node2D)
-	get_tree().change_scene_to(load("res://UI/HomeMenu.tscn"))
+	get_tree().change_scene_to(home_menu)
 
 
 func _on_ForwardButton_pressed():
 	ScheduleData.save_scrolling($Node2D)
-	get_tree().change_scene_to(load("res://UI/ScheduleMenuVersion2.tscn"))
+	get_tree().change_scene_to(schedule_menu)

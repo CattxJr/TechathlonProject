@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://UI/HomeMenu.gd" type="Script" id=1]
 [ext_resource path="res://banner_1.png" type="Texture" id=2]
@@ -8,16 +8,19 @@
 [ext_resource path="res://banner2.png" type="Texture" id=6]
 [ext_resource path="res://banner3.png" type="Texture" id=7]
 [ext_resource path="res://Winchester/font2.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Singleton/schedtrack_3.png" type="Texture" id=9]
+[ext_resource path="res://Singleton/schedtrack_1.png" type="Texture" id=10]
+[ext_resource path="res://Singleton/schedtrack_2.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 50
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 50
-font_data = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 4 )
 
 [sub_resource type="SpriteFrames" id=4]
@@ -25,7 +28,15 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "default",
-"speed": 2.0
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
 } ]
 
 [node name="HomeMenu" type="Control"]
@@ -44,7 +55,7 @@ margin_top = 550.63
 margin_right = 552.359
 margin_bottom = 655.132
 theme = ExtResource( 5 )
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Make New Schedule"
 __meta__ = {
@@ -58,7 +69,7 @@ margin_right = 552.359
 margin_bottom = 803.273
 rect_pivot_offset = Vector2( 99.162, 21.125 )
 theme = ExtResource( 5 )
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Load a Schedule"
 __meta__ = {
@@ -87,7 +98,7 @@ color = Color( 0.309804, 0.309804, 0.309804, 0.52549 )
 [node name="Label" type="Label" parent="ColorRect"]
 margin_right = 576.0
 margin_bottom = 41.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 text = "Programming: Jason Song; Design: Yueran Jia, Leo Qian, Heneni Dong; \\n Moral Support: Nathaniel Bing Su"
 align = 1
 autowrap = true
@@ -99,7 +110,12 @@ __meta__ = {
 position = Vector2( 288.181, 205.565 )
 scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 4 )
-frame = 1
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+position = Vector2( 284.678, 392.556 )
+scale = Vector2( 0.15, 0.15 )
+frames = SubResource( 5 )
 playing = true
 [connection signal="pressed" from="MakeSchedule" to="." method="_on_MakeSchedule_pressed"]
 [connection signal="pressed" from="LoadSchedule" to="." method="_on_LoadSchedule_pressed"]
