@@ -1,0 +1,350 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://UI/MakeSchedule.gd" type="Script" id=1]
+[ext_resource path="res://kenneyUI-blue.tres" type="Theme" id=2]
+[ext_resource path="res://kenvector_future.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://UI/ScrollingBackground.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Winchester/arrowtheme.tres" type="Theme" id=5]
+[ext_resource path="res://Winchester/buttontheme.tres" type="Theme" id=6]
+[ext_resource path="res://MansalvaRegular.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Winchester/font2.tres" type="DynamicFont" id=8]
+
+[sub_resource type="DynamicFont" id=5]
+size = 50
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 32
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 24
+font_data = ExtResource( 7 )
+
+[node name="MakeSchedule" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" parent="." instance=ExtResource( 4 )]
+
+[node name="Submit" type="Button" parent="."]
+margin_left = 169.591
+margin_top = 750.0
+margin_right = 369.591
+margin_bottom = 830.0
+theme = ExtResource( 6 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Submit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="optionbuttons" type="VBoxContainer" parent="."]
+margin_left = 96.327
+margin_top = 167.247
+margin_right = 336.327
+margin_bottom = 439.247
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Period2" type="OptionButton" parent="optionbuttons"]
+margin_right = 240.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 66.324, 0 )
+theme = ExtResource( 6 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+
+[node name="Period3" type="OptionButton" parent="optionbuttons"]
+margin_top = 46.0
+margin_right = 240.0
+margin_bottom = 88.0
+theme = ExtResource( 6 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+
+[node name="Period4" type="OptionButton" parent="optionbuttons"]
+margin_top = 92.0
+margin_right = 240.0
+margin_bottom = 134.0
+theme = ExtResource( 6 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+
+[node name="Period5" type="OptionButton" parent="optionbuttons"]
+margin_top = 138.0
+margin_right = 240.0
+margin_bottom = 180.0
+theme = ExtResource( 6 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+
+[node name="Period6" type="OptionButton" parent="optionbuttons"]
+margin_top = 184.0
+margin_right = 240.0
+margin_bottom = 226.0
+theme = ExtResource( 6 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+
+[node name="Period7" type="OptionButton" parent="optionbuttons"]
+margin_top = 230.0
+margin_right = 240.0
+margin_bottom = 272.0
+theme = ExtResource( 6 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+
+[node name="OptionButtons" type="VBoxContainer" parent="."]
+margin_left = 385.461
+margin_top = 167.247
+margin_right = 622.461
+margin_bottom = 427.247
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionRow2" type="HBoxContainer" parent="OptionButtons"]
+margin_right = 237.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="OptionButtons/OptionRow2"]
+visible = false
+margin_top = 5.0
+margin_right = 41.0
+margin_bottom = 19.0
+text = "Class: "
+
+[node name="Label2" type="Label" parent="OptionButtons/OptionRow2"]
+visible = false
+margin_left = 33.0
+margin_top = 5.0
+margin_right = 130.0
+margin_bottom = 19.0
+text = "Room Number:"
+
+[node name="LineEdit" type="LineEdit" parent="OptionButtons/OptionRow2"]
+margin_right = 78.8655
+margin_bottom = 40.4343
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 8 )
+max_length = 4
+expand_to_text_length = true
+
+[node name="OptionRow" type="HBoxContainer" parent="OptionButtons"]
+margin_top = 44.0
+margin_right = 237.0
+margin_bottom = 84.0
+
+[node name="Label" type="Label" parent="OptionButtons/OptionRow"]
+visible = false
+margin_top = 5.0
+margin_right = 41.0
+margin_bottom = 19.0
+text = "Class: "
+
+[node name="Label2" type="Label" parent="OptionButtons/OptionRow"]
+visible = false
+margin_left = 33.0
+margin_top = 5.0
+margin_right = 130.0
+margin_bottom = 19.0
+text = "Room Number:"
+
+[node name="LineEdit" type="LineEdit" parent="OptionButtons/OptionRow"]
+margin_right = 78.8655
+margin_bottom = 40.4343
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 8 )
+max_length = 4
+expand_to_text_length = true
+
+[node name="OptionRow3" type="HBoxContainer" parent="OptionButtons"]
+margin_top = 88.0
+margin_right = 237.0
+margin_bottom = 128.0
+
+[node name="Label" type="Label" parent="OptionButtons/OptionRow3"]
+visible = false
+margin_top = 5.0
+margin_right = 41.0
+margin_bottom = 19.0
+text = "Class: "
+
+[node name="Label2" type="Label" parent="OptionButtons/OptionRow3"]
+visible = false
+margin_left = 33.0
+margin_top = 5.0
+margin_right = 130.0
+margin_bottom = 19.0
+text = "Room Number:"
+
+[node name="LineEdit" type="LineEdit" parent="OptionButtons/OptionRow3"]
+margin_right = 78.8655
+margin_bottom = 40.4343
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 8 )
+max_length = 4
+expand_to_text_length = true
+
+[node name="OptionRow4" type="HBoxContainer" parent="OptionButtons"]
+margin_top = 132.0
+margin_right = 237.0
+margin_bottom = 172.0
+
+[node name="Label" type="Label" parent="OptionButtons/OptionRow4"]
+visible = false
+margin_top = 5.0
+margin_right = 41.0
+margin_bottom = 19.0
+text = "Class: "
+
+[node name="Label2" type="Label" parent="OptionButtons/OptionRow4"]
+visible = false
+margin_left = 33.0
+margin_top = 5.0
+margin_right = 130.0
+margin_bottom = 19.0
+text = "Room Number:"
+
+[node name="LineEdit" type="LineEdit" parent="OptionButtons/OptionRow4"]
+margin_right = 78.8655
+margin_bottom = 40.4343
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 8 )
+max_length = 4
+expand_to_text_length = true
+
+[node name="OptionRow5" type="HBoxContainer" parent="OptionButtons"]
+margin_top = 176.0
+margin_right = 237.0
+margin_bottom = 216.0
+
+[node name="Label" type="Label" parent="OptionButtons/OptionRow5"]
+visible = false
+margin_top = 5.0
+margin_right = 41.0
+margin_bottom = 19.0
+text = "Class: "
+
+[node name="Label2" type="Label" parent="OptionButtons/OptionRow5"]
+visible = false
+margin_left = 33.0
+margin_top = 5.0
+margin_right = 130.0
+margin_bottom = 19.0
+text = "Room Number:"
+
+[node name="LineEdit" type="LineEdit" parent="OptionButtons/OptionRow5"]
+margin_right = 78.8655
+margin_bottom = 40.4343
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 8 )
+max_length = 4
+expand_to_text_length = true
+
+[node name="OptionRow6" type="HBoxContainer" parent="OptionButtons"]
+margin_top = 220.0
+margin_right = 237.0
+margin_bottom = 260.0
+
+[node name="Label" type="Label" parent="OptionButtons/OptionRow6"]
+visible = false
+margin_top = 5.0
+margin_right = 41.0
+margin_bottom = 19.0
+text = "Class: "
+
+[node name="Label2" type="Label" parent="OptionButtons/OptionRow6"]
+visible = false
+margin_left = 33.0
+margin_top = 5.0
+margin_right = 130.0
+margin_bottom = 19.0
+text = "Room Number:"
+
+[node name="LineEdit" type="LineEdit" parent="OptionButtons/OptionRow6"]
+margin_right = 78.8655
+margin_bottom = 40.4343
+theme = ExtResource( 2 )
+custom_fonts/font = ExtResource( 8 )
+max_length = 4
+expand_to_text_length = true
+
+[node name="ErrorMessage" type="Label" parent="."]
+margin_left = 20.1421
+margin_top = 874.073
+margin_right = 60.1421
+margin_bottom = 892.073
+rect_scale = Vector2( 1.3, 1.3 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+
+[node name="Day" type="Label" parent="."]
+margin_left = 240.0
+margin_top = 30.0
+margin_right = 833.0
+margin_bottom = 66.0
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "THE DAY HAS CUUUUUUUUUUUUUM"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Class" type="Label" parent="."]
+margin_left = 195.746
+margin_top = 118.384
+margin_right = 260.746
+margin_bottom = 145.384
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Class"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Room" type="Label" parent="."]
+margin_left = 383.0
+margin_top = 118.384
+margin_right = 439.0
+margin_bottom = 145.384
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Room"
+
+[node name="BackButton" type="Button" parent="."]
+margin_right = 80.0
+margin_bottom = 80.0
+theme = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Submit" to="." method="_on_Submit_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]

@@ -1,0 +1,289 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/ScheduleMenu.gd" type="Script" id=1]
+[ext_resource path="res://UI/ScrollingBackground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Winchester/font2.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Winchester/arrowtheme.tres" type="Theme" id=4]
+
+[node name="ScheduleMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_top = 160.0
+margin_right = 576.0
+margin_bottom = 287.0
+columns = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer6" type="VBoxContainer" parent="GridContainer"]
+margin_right = 30.0
+margin_bottom = 127.0
+
+[node name="Label2" type="Label" parent="GridContainer/VBoxContainer6"]
+margin_right = 30.0
+margin_bottom = 14.0
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer6"]
+margin_top = 18.0
+margin_right = 30.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Period6" type="Label" parent="GridContainer/VBoxContainer6"]
+margin_top = 36.0
+margin_right = 30.0
+margin_bottom = 55.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Test"
+
+[node name="Period7" type="Label" parent="GridContainer/VBoxContainer6"]
+margin_top = 59.0
+margin_right = 30.0
+margin_bottom = 73.0
+text = "Test"
+
+[node name="Period8" type="Label" parent="GridContainer/VBoxContainer6"]
+margin_top = 77.0
+margin_right = 30.0
+margin_bottom = 91.0
+text = "Test"
+
+[node name="Period9" type="Label" parent="GridContainer/VBoxContainer6"]
+margin_top = 95.0
+margin_right = 30.0
+margin_bottom = 109.0
+text = "test"
+
+[node name="Period10" type="Label" parent="GridContainer/VBoxContainer6"]
+margin_top = 113.0
+margin_right = 30.0
+margin_bottom = 127.0
+text = "test"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer"]
+margin_left = 34.0
+margin_right = 61.0
+margin_bottom = 127.0
+
+[node name="Day" type="Label" parent="GridContainer/VBoxContainer"]
+margin_right = 27.0
+margin_bottom = 14.0
+
+[node name="Period1" type="Label" parent="GridContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 27.0
+margin_bottom = 32.0
+text = "Test"
+
+[node name="Period2" type="Label" parent="GridContainer/VBoxContainer"]
+margin_top = 36.0
+margin_right = 27.0
+margin_bottom = 50.0
+text = "Test"
+
+[node name="Period3" type="Label" parent="GridContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 27.0
+margin_bottom = 68.0
+text = "Test"
+
+[node name="Period4" type="Label" parent="GridContainer/VBoxContainer"]
+margin_top = 72.0
+margin_right = 27.0
+margin_bottom = 86.0
+
+[node name="Period5" type="Label" parent="GridContainer/VBoxContainer"]
+margin_top = 90.0
+margin_right = 27.0
+margin_bottom = 104.0
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer"]
+margin_top = 108.0
+margin_right = 27.0
+margin_bottom = 122.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GridContainer"]
+margin_left = 65.0
+margin_right = 92.0
+margin_bottom = 127.0
+
+[node name="Day2" type="Label" parent="GridContainer/VBoxContainer2"]
+margin_right = 27.0
+margin_bottom = 14.0
+
+[node name="Period1" type="Label" parent="GridContainer/VBoxContainer2"]
+margin_top = 18.0
+margin_right = 27.0
+margin_bottom = 32.0
+text = "Test"
+
+[node name="Period2" type="Label" parent="GridContainer/VBoxContainer2"]
+margin_top = 36.0
+margin_right = 27.0
+margin_bottom = 50.0
+text = "Test"
+
+[node name="Period3" type="Label" parent="GridContainer/VBoxContainer2"]
+margin_top = 54.0
+margin_right = 27.0
+margin_bottom = 68.0
+text = "Test"
+
+[node name="Period4" type="Label" parent="GridContainer/VBoxContainer2"]
+margin_top = 72.0
+margin_right = 27.0
+margin_bottom = 86.0
+
+[node name="Period5" type="Label" parent="GridContainer/VBoxContainer2"]
+margin_top = 90.0
+margin_right = 27.0
+margin_bottom = 104.0
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer2"]
+margin_top = 108.0
+margin_right = 27.0
+margin_bottom = 122.0
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="GridContainer"]
+margin_left = 96.0
+margin_right = 123.0
+margin_bottom = 127.0
+
+[node name="Day3" type="Label" parent="GridContainer/VBoxContainer3"]
+margin_right = 27.0
+margin_bottom = 14.0
+
+[node name="Period1" type="Label" parent="GridContainer/VBoxContainer3"]
+margin_top = 18.0
+margin_right = 27.0
+margin_bottom = 32.0
+text = "Test"
+
+[node name="Period2" type="Label" parent="GridContainer/VBoxContainer3"]
+margin_top = 36.0
+margin_right = 27.0
+margin_bottom = 50.0
+text = "Test"
+
+[node name="Period3" type="Label" parent="GridContainer/VBoxContainer3"]
+margin_top = 54.0
+margin_right = 27.0
+margin_bottom = 68.0
+text = "Test"
+
+[node name="Period4" type="Label" parent="GridContainer/VBoxContainer3"]
+margin_top = 72.0
+margin_right = 27.0
+margin_bottom = 86.0
+
+[node name="Period5" type="Label" parent="GridContainer/VBoxContainer3"]
+margin_top = 90.0
+margin_right = 27.0
+margin_bottom = 104.0
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer3"]
+margin_top = 108.0
+margin_right = 27.0
+margin_bottom = 122.0
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="GridContainer"]
+margin_left = 127.0
+margin_right = 154.0
+margin_bottom = 127.0
+
+[node name="Day4" type="Label" parent="GridContainer/VBoxContainer4"]
+margin_right = 27.0
+margin_bottom = 14.0
+
+[node name="Period1" type="Label" parent="GridContainer/VBoxContainer4"]
+margin_top = 18.0
+margin_right = 27.0
+margin_bottom = 32.0
+text = "Test"
+
+[node name="Period2" type="Label" parent="GridContainer/VBoxContainer4"]
+margin_top = 36.0
+margin_right = 27.0
+margin_bottom = 50.0
+text = "Test"
+
+[node name="Period3" type="Label" parent="GridContainer/VBoxContainer4"]
+margin_top = 54.0
+margin_right = 27.0
+margin_bottom = 68.0
+text = "Test"
+
+[node name="Period4" type="Label" parent="GridContainer/VBoxContainer4"]
+margin_top = 72.0
+margin_right = 27.0
+margin_bottom = 86.0
+
+[node name="Period5" type="Label" parent="GridContainer/VBoxContainer4"]
+margin_top = 90.0
+margin_right = 27.0
+margin_bottom = 104.0
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer4"]
+margin_top = 108.0
+margin_right = 27.0
+margin_bottom = 122.0
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="GridContainer"]
+margin_left = 158.0
+margin_right = 185.0
+margin_bottom = 127.0
+
+[node name="Day5" type="Label" parent="GridContainer/VBoxContainer5"]
+margin_right = 27.0
+margin_bottom = 14.0
+
+[node name="Period1" type="Label" parent="GridContainer/VBoxContainer5"]
+margin_top = 18.0
+margin_right = 27.0
+margin_bottom = 32.0
+text = "Test"
+
+[node name="Period2" type="Label" parent="GridContainer/VBoxContainer5"]
+margin_top = 36.0
+margin_right = 27.0
+margin_bottom = 50.0
+text = "Test"
+
+[node name="Period3" type="Label" parent="GridContainer/VBoxContainer5"]
+margin_top = 54.0
+margin_right = 27.0
+margin_bottom = 68.0
+text = "Test"
+
+[node name="Period4" type="Label" parent="GridContainer/VBoxContainer5"]
+margin_top = 72.0
+margin_right = 27.0
+margin_bottom = 86.0
+
+[node name="Period5" type="Label" parent="GridContainer/VBoxContainer5"]
+margin_top = 90.0
+margin_right = 27.0
+margin_bottom = 104.0
+
+[node name="Label" type="Label" parent="GridContainer/VBoxContainer5"]
+margin_top = 108.0
+margin_right = 27.0
+margin_bottom = 122.0
+
+[node name="BackButton" type="Button" parent="."]
+margin_right = 80.0
+margin_bottom = 80.0
+theme = ExtResource( 4 )
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
